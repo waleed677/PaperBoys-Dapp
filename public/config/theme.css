@@ -1,0 +1,626 @@
+:root {
+  --primary: #f7f7f7 !important;
+  --primary-text: #1a1a1a;
+  --secondary: #5fcde4;
+  --secondary-text: #ffffff;
+  --accent: #505050;
+  --accent-text: #ffffff;
+}
+
+body {
+  /* background: #3491F9 !important; */
+  background-image: url("./images/bg1.png") !important;
+  background-size: contain;
+  background-position: center;
+}
+
+
+
+
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  vertical-align: middle;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.flexItems {
+  width: 10%;
+}
+
+.flexItems>a>img {
+  width: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .flexItems {
+    width: 15%;
+  }
+}
+
+.overlay {
+  background: #222222;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  top: 0;
+  opacity: 0.5;
+  z-index: 5000;
+  width: 100%;
+}
+
+.spinner {
+  margin: auto;
+}
+
+
+.paper-text {
+  color: #fbd402;
+  -webkit-text-stroke: 0.3px #37465d;
+  -webkit-text-fill-color: #fbd402;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 900;
+
+}
+
+.mint-amount {
+
+  font-weight: bold;
+  font-size: 3rem;
+  color: #ff0000;
+  -webkit-text-stroke: 0.5px #37465d;
+  text-shadow: 2px 2px #37465d;
+}
+
+.mint-available {
+  font-size: 3rem;
+  color: #3cc4f0;
+  font-weight: 900;
+  -webkit-text-stroke: 2px #37465d;
+  text-shadow: 3px 3px #37465d;
+
+}
+
+
+.logo {
+  width: 40%;
+}
+
+.heading {
+  width: 33%;
+}
+
+.btn-max {
+  width: 60%;
+}
+
+.btn-mint {
+  width: 30%;
+}
+
+@media screen and (max-width: 480px) {
+
+  .logo {
+    width: 50%;
+  }
+
+  .heading {
+    width: 33%;
+  }
+
+  .paper-text {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .btn-max {
+    width: 50%;
+  }
+
+  .btn-mint {
+    width: 33%;
+  }
+
+  .align-mob {
+    justify-content: right !important;
+  }
+
+
+}
+
+.overlay-status {
+
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 36px;
+}
+
+
+.root {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.bg {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* background-image: url(../../assests/images/background.png); */
+}
+
+.wallet {
+  position: absolute;
+  width: 22vw;
+  margin: auto;
+  left: 17%;
+  top: 21%;
+  cursor: pointer;
+}
+
+.phases {
+  position: absolute;
+  width: 22vw;
+  margin: auto;
+  left: 17%;
+  top: 35%;
+  cursor: default !important;
+}
+
+.mintWithCard {
+  position: absolute;
+  width: 25vw;
+  margin: auto;
+  left: 15%;
+  top: 65%;
+  cursor: pointer;
+}
+
+.paper {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bg img,
+.paper img,
+.m-bg img,
+.m-paper img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  /* background-image: url(../../assests/images/background.png);
+background-size: cover; */
+}
+
+.timer-container {
+  position: absolute;
+  z-index: 4;
+  left: 20%;
+  top: 52%;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container .count {
+  margin-left: 1vw;
+  position: relative;
+  width: 20vw;
+  height: 10vw;
+}
+
+.btn-container .count img {
+  max-width: 100%;
+  width: 60%;
+  user-select: none;
+  max-height: 60%;
+}
+
+.btn-container .count .no {
+  position: absolute;
+  z-index: 2;
+  top: 1vw;
+  left: 0;
+  right: 8vw;
+  text-align: center;
+  font-size: 2vw;
+  color: #fff;
+  user-select: none;
+  font-family: Megusto;
+}
+
+.btn-container .text {
+  font-family: Megusto;
+  font-size: 1vw;
+  color: yellow;
+  user-select: none;
+}
+
+.token {
+  width: 100%;
+  min-height: 100%;
+}
+
+.token img {
+  max-width: 100%;
+  max-height: 79%;
+  width: 50%;
+  float: right;
+}
+
+.mint-amt{
+  position: absolute;
+  z-index: 3;
+  top: 27vw;
+  right: 15vw;
+  width: 20vw;
+}
+
+.mint {
+  position: absolute;
+  z-index: 3;
+  top: 35vw;
+  right: 19vw;
+  width: 13vw;
+  cursor: pointer;
+}
+
+.price{
+  position: absolute;
+  z-index: 3;
+  top: 32vw;
+  right: 18vw;
+  width: 15vw;
+  cursor: pointer;
+}
+
+.Phases{
+  position: absolute;
+  top: 20%;
+  left: 17%;
+  background:#165FA4;
+  width: 22%;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.m-bg,
+.m-paper,
+.m-token {
+  display: none;
+}
+
+@media (max-width: 767px) {
+
+  .bg,
+  .paper,
+  .token {
+    display: none;
+  }
+
+  .m-bg {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .m-paper {
+    display: block;
+
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timer-container {
+    position: absolute;
+    z-index: 4;
+    left: 40%;
+    top: 20%;
+  }
+
+
+  .btn-container .count {
+    margin-left: 1vw;
+    position: relative;
+    width: 20vw;
+    height: 10vw;
+  }
+
+  .btn-container .count img {
+    max-width: 100%;
+    width: 70%;
+    max-height: 80%; }
+
+    .btn-container .count .no {
+      position: absolute;
+      z-index: 2;
+      top: 1vw;
+      text-align: center;
+      font-size: 2vw;
+      color: #fff;
+      user-select: none;
+      font-family: Megusto;
+      left: 12%;
+    }
+    
+
+
+  .btn-container .text {
+    font-family: Megusto;
+    font-size: 1.2vw;
+    color: yellow;
+    user-select: none;
+  }
+
+    
+  
+ 
+  .m-token {
+    display: block;
+    width: 80%;
+    min-height: 100%;
+    margin-top: 20em;
+  }
+
+  .m-token img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+  }
+
+  .mint {
+    top: unset;
+    bottom: 50vw;
+    left: 0;
+    right: 0;
+    width: 25vw;
+    margin: auto;
+
+
+  }
+
+  .mint-amt{
+    top: unset;
+    bottom: 60vw;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 20vw;
+    margin: auto;
+  }
+
+  .wallet {
+    position: absolute;
+    width: 27vw;
+    margin: auto;
+    left: 67%;
+    top: 2%;
+  }
+
+
+  .phases {
+    position: absolute;
+    width: 40vw;
+    margin: auto;
+    left: 30%;
+    top: 10%;
+    cursor: none !important;
+  }
+
+  .mintWithCard {
+    position: absolute;
+    width: 50vw;
+    margin: auto;
+    left: 25%;
+    top: 28%;
+  }
+}
+
+
+@media (max-width: 510px) {
+
+  .main {
+    background-image: none;
+  }
+}
+
+@media (max-width: 440px) {
+
+  .m-paper,
+  .m-bg {
+    height: 110vh;
+  }
+
+  .m-paper img,
+  .m-bg img {
+    max-height: unset;
+    height: 100%;
+  }
+
+  .m-token {
+    width: 100%;
+    margin-top: 18em;
+  }
+
+  .mint {
+    top: unset;
+    bottom: 60vw;
+    left: 6%;
+    width: 30vw;
+    margin: auto;
+
+  }
+
+  .mint-amt {
+    top: unset;
+    bottom: 70vw;
+    left: 6%;
+    width: 30vw;
+    margin: auto;
+
+  }
+
+  .wallet {
+    position: absolute;
+    width: 34vw;
+    margin: auto;
+    left: 60%;
+    top: 1%;
+  }
+
+  .m-token img {
+    margin-top: 8px;
+    margin-left: 16px;
+    max-width: 97%;
+    max-height: 96%;
+    width: 100%;
+  }
+
+  .main {
+    background-image: none;
+  }
+
+  .phases {
+    width: 60vw;
+    left: 20%;
+    top: 10%;
+  }
+
+  .mintWithCard {
+    width: 70vw;
+    left: 15%;
+    top: 28%;
+  }
+
+  .timer-container {
+    position: absolute;
+    z-index: 4;
+    left: 35%;
+    top: 22%;
+  }
+
+
+  .btn-container .count {
+    margin-left: 1vw;
+    position: relative;
+    width: 40vw;
+    height: 10vw;
+  }
+
+  .btn-container .count img {
+    max-width: 100%;
+    width: 70%;
+    max-height: 100%; }
+
+    .btn-container .count .no {
+      position: absolute;
+      z-index: 2;
+      top: 2vw;
+      text-align: center;
+      font-size: 4vw;
+      color: #fff;
+      user-select: none;
+      font-family: Megusto;
+      left: -15px;
+    }
+    
+
+
+  .btn-container .text {
+    font-family: Megusto;
+    font-size: 2vw;
+    padding-bottom: 2px;
+    color: yellow;
+    user-select: none;
+  }
+
+
+}
+
+@media (max-width: 400px) {
+
+  .m-paper,
+  .m-bg {
+    height: 100vh;
+
+  }
+
+  .m-paper img,
+  .m-bg img {
+    max-height: unset;
+    height: 100%;
+  }
+
+  .mint{
+    bottom: 57vw;
+  }
+
+  .mint-amt{
+    bottom: 67vw;
+  }
+  
+}
+
+@media (max-width: 420px) {
+
+  
+
+  .m-token img {
+    margin-top: 8px;
+    margin-left: 16px;
+    max-width: 92%;
+    max-height: 96%;
+    width: 100%;
+
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  .timer-container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
