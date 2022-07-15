@@ -286,4 +286,9 @@ export const StyledRoundButton = styled.button`
     -moz-box-shadow: none;
     border: none;
   }
+  @media only screen and (max-width: 768px) {
+    font-size: 1.4rem;
+  }
+
+  
 `;

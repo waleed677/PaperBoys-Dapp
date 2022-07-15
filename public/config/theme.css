@@ -14,10 +14,6 @@ body {
   background-position: center;
 }
 
-
-
-
-
 .flexContainer {
   display: flex;
   align-items: center;
@@ -182,6 +178,12 @@ body {
   cursor: default !important;
 }
 
+.price .price-text{
+  font-size: 1.8rem;
+  color: #ff0000;
+  text-align: center;
+}
+
 .mintWithCard {
   position: absolute;
   width: 25vw;
@@ -301,18 +303,32 @@ background-size: cover; */
   top: 32vw;
   right: 18vw;
   width: 15vw;
-  cursor: pointer;
 }
 
 .Phases{
   position: absolute;
-  top: 20%;
+  top: 36%;
   left: 17%;
   background:#165FA4;
   width: 22%;
   border: 1px solid #000000;
-  border-radius: 4px;
-  padding: 5px;
+  border-radius: 6px;
+  box-shadow: 0px 10px #000000;;
+}
+
+.phase{
+  border-bottom: 1px solid #000000;
+  padding: 10px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: #FFF400;
+  font-size: 1.5rem;
+}
+
+.mini-text{
+  font-size: 0.8rem;
+  color: #fff;
 }
 
 .m-bg,
@@ -359,6 +375,30 @@ background-size: cover; */
     top: 20%;
   }
 
+  .Phases{
+    position: absolute;
+    top: 6%;
+    left: 29%;
+    background:#165FA4;
+    width: 45%;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    box-shadow: 0px 10px #000000;;
+  }
+  
+  .phase{
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #FFF400;
+    font-size: 1.0rem;
+  }
+
+  .mint-amount{
+    font-size: 1.3rem;
+  }
 
   .btn-container .count {
     margin-left: 1vw;
@@ -416,8 +456,6 @@ background-size: cover; */
     right: 0;
     width: 25vw;
     margin: auto;
-
-
   }
 
   .mint-amt{
@@ -428,6 +466,15 @@ background-size: cover; */
     right: 0;
     width: 20vw;
     margin: auto;
+  }
+
+  .price{
+    z-index: 3;
+    top:unset;
+    bottom: 60vw;
+    left: 0;
+    right: 0;
+    width: 20vw;
   }
 
   .wallet {
@@ -499,6 +546,16 @@ background-size: cover; */
     width: 30vw;
     margin: auto;
 
+  }
+
+  .price{
+    z-index: 3;
+    top:unset;
+    bottom: 10vw;
+    left: 6%;
+    right: 0;
+    width: 20vw;
+    margin: auto;
   }
 
   .wallet {
@@ -597,8 +654,18 @@ background-size: cover; */
   }
 
   .mint-amt{
-    bottom: 67vw;
+    bottom: 75vw;
   }
+
+  .price{
+    bottom: 75vw;
+  }
+
+ 
+  .price{
+    top: 72vw;
+  }
+  
   
 }
 

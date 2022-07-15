@@ -83,7 +83,7 @@ function Home() {
     SHOW_BACKGROUND: false,
   });
 
-  let countDownDate = new Date("2022-07-15T19:30:00-0800");
+  let countDownDate = new Date("2022-07-15T18:30:00-0800");
 
   let now = new Date().getTime();
   let timeleft = countDownDate - now;
@@ -291,18 +291,18 @@ function Home() {
 
         <div className="main">
           <img src={Connectwallet} className="wallet" />
-          {/* <div className="Phases">
-            <div className="Phase1">
+          <div className="Phases">
+            <div className="phase">
               Phase 1: Mint Pass Only
+              <p className="mini-text">Purchase Mint Pass: </p>
             </div>
-            <div className="Phase2">
+            <div className="phase">
               Phase 2: Allowlist
             </div>
-            <div className="Phase3">
+            <div className="phase">
               Phase 3: Public Sale
             </div>
-          </div> */}
-          <img src={phase1} className="phases" />
+          </div>
           {/* timer hide code */}
           {days >= 0 && hours >= 0 && minutes >= 0 && seconds >= 0 && (
             <div className="timer-container">
@@ -360,7 +360,7 @@ function Home() {
           </div>
 
           <div className="price">
-            <s.TextTitle color={"#ff0000"}> 1 NFT Cost {displayCost}</s.TextTitle>
+            <p className="price-text"> 1 NFT Cost {displayCost}</p>
           </div>
           <a>
             <img src={mint} alt="" className="mint" />
@@ -437,7 +437,7 @@ function Home() {
             >
               <img
                 src={"config/images/btn-max.png"}
-                class="btn-max"
+                className="btn-max"
                 alt="max button"
               />
             </div>
